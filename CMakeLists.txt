@@ -1,7 +1,14 @@
+# --------------------------------------------------- #
+#                     put-license                     #
+#         Copyright (c) 2014 Mikhail Artemyev         #
+#         http://code.google.com/p/put-license        #
+#     See LICENSE.txt file for license information    #
+# --------------------------------------------------- #
+
 cmake_minimum_required(VERSION 2.8)
 
 
-project(put_license)
+project(put-license)
 
 
 # --- define and connect some important directories ---

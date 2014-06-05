@@ -1,3 +1,10 @@
+// --------------------------------------------------- //
+//                     put-license                     //
+//         Copyright (c) 2014 Mikhail Artemyev         //
+//         http://code.google.com/p/put-license        //
+//     See LICENSE.txt file for license information    //
+// --------------------------------------------------- //
+
 #include <iostream>
 #include <fstream>
 #include <string>
