@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     std::cout << "\nUsage:\n./put_license <path/to/dir> <license_template.txt>\n";
     std::cout << "<path/to/dir> - path to top-level directory containing .hpp, .cpp files and/or subdirectories (search goes recursively)\n";
     std::cout << "<license_template.txt> - a file containing a license info which will be put in each file\n\n";
-    std::cout << "Example:\n./put_license ../test ../test/license_header.txt\n\n";
+    std::cout << "Example:\n" << argv[0] << " ../test ../test/license_header.txt\n\n";
     return 1;
   }
 
