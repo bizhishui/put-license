@@ -1,0 +1,16 @@
+Installation process is the following:
+
+1. Go to the top level directory of the project
+   $ cd put-license
+2. Create a building directory, and go there
+   $ mkdir build
+   $ cd build
+3. Configure the project using CMake
+   $ cmake ..
+4. Compile the project
+   $ make
+
+The list of the options (help menu) is available upon launch of the program
+with no arguments:
+   $ ./put-license
+
