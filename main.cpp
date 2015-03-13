@@ -57,6 +57,7 @@ int main(int argc, char **argv)
   // that have an extension from this map
   std::map<std::string, std::string> ext_map;
   ext_map[".hpp"] = "#ifndef"; // a key word from which the file with .hpp extension begins 
+  ext_map[".h"]   = "#ifndef"; // a key word from which the file with .h extension begins 
   ext_map[".cpp"] = "#include"; // a key word from which the file with .cpp extension begins 
 
 
