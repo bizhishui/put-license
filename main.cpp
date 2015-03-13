@@ -92,18 +92,19 @@ int main(int argc, char **argv)
 
       // change a part of the content in the beginning of the file
       size_t pos = file_content.find(iter->second);
-      if (pos == file_content.npos)
-        throw std::runtime_error("Necessary substring '" + iter->second + "' not found");
-
-      // make a new file with the same name
-      std::ofstream out(filename.c_str());
-      if (!out)
-        throw std::runtime_error("File '" + filename + "' can't be opened for writing");
-      // write a license information
-      out << license_info;
-      // write all file's content
-      out << file_content.substr(pos);
-      out.close();
+      if (pos != file_content.npos) // if the key-line was found
+      {
+        // make a new file with the same name
+        std::ofstream out(filename.c_str());
+        if (!out)
+          throw std::runtime_error("File '" + filename + "' can't be opened for writing");
+        // write a license information
+        out << license_info;
+        // write all file's content starting from the first appearance of the key-line
+        // which is described above (in the map section)
+        out << file_content.substr(pos);
+        out.close();
+      }
     }
 
     ++dir;
